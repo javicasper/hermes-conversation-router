@@ -1,0 +1,14 @@
+name: conversation-router
+label: Conversation router
+kind: standalone
+version: 1.0.0
+author: javicasper
+description: >
+  Ends never-ending chat sessions without cutting you off mid-topic. After a
+  pause, a cheap auxiliary model decides whether a message continues the
+  current conversation, starts a new one, or resumes a recent one (injecting a
+  short summary instead of the full history). Per-person, cross-platform,
+  model- and provider-agnostic.
+provides_hooks:
+  - pre_gateway_dispatch
+  - on_session_finalize
