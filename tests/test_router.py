@@ -49,7 +49,7 @@ def home(tmp_path, monkeypatch):
         create table messages (id integer primary key, session_id text, role text, content text, timestamp real);
     """)
     now = time.time()
-    rows = [("a1", "MisoTV channel", "telegram", "111", now - 3600),
+    rows = [("a1", "Media server", "telegram", "111", now - 3600),
             ("a2", "Mail setup", "whatsapp", "34600111222@s.whatsapp.net", now - 7200),
             ("b1", "Bob's secret", "telegram", "222", now - 600),
             ("x1", "Stranger", "telegram", "999", now - 600),
